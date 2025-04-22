@@ -5,12 +5,11 @@ plugins {
     id("kotlin-parcelize")
     id("com.google.dagger.hilt.android")
     kotlin("plugin.serialization") version "1.5.0"
-
 }
 
 android {
     namespace = "com.taken.data"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 26
@@ -84,4 +83,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+}
+
+kapt {
+    correctErrorTypes = true
 }

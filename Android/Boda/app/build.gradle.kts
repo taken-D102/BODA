@@ -10,7 +10,7 @@ plugins {
 
 android {
     namespace = "com.taken.boda"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.taken.boda"
