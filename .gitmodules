@@ -4,3 +4,6 @@
 [submodule "taken_backend"]
 	path = taken_backend
 	url = https://lab.ssafy.com/taken/taken_backend.git
+[submodule "android"]
+	path = android
+	url = https://lab.ssafy.com/taken/taken_android.git
