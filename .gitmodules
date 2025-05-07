@@ -4,3 +4,6 @@
 [submodule "backend"]
 	path = backend
 	url = https://lab.ssafy.com/taken/taken_backend.git
+[submodule "ai"]
+	path = ai
+	url = https://lab.ssafy.com/taken/taken_ai.git
