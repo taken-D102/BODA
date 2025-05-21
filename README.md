@@ -139,27 +139,27 @@ src/
 2. FastAPI
 ```
 TAKEN_AI/
-├── .venv/
-├── app/
-│   ├── __pycache__/
-│   ├── routers/
-│   │   ├── __pycache__/
-│   │   ├── export.py
-│   │   ├── predictor.py
-│   │   └── train.py
-│   ├── weights/
-│   │   └── routepred.pt
-│   ├── config.py
-│   ├── export_csv.py
-│   ├── main.py
-│   ├── model.py
-│   ├── predictor.py
-│   ├── schemas.py
-│   └── train.py
-├── .env
-├── .gitignore
-├── README.md
-└── requirements.txt
+├── .venv/                              # Python 가상환경 (의존성 격리)
+├── app/                                # 애플리케이션 핵심 코드
+│   ├── __pycache__/                    # Python 캐시 파일 (자동 생성됨)
+│   ├── routers/                        # FastAPI 라우터 모듈 (API 엔드포인트 구성)
+│   │   ├── __pycache__/                # 캐시 파일
+│   │   ├── export.py                   # CSV/파일로 데이터 export 관련 API
+│   │   ├── predictor.py                # 예측 기능 관련 API 엔드포인트
+│   │   └── train.py                    # 모델 학습 관련 API 엔드포인트
+│   ├── weights/                        # 학습된 모델 가중치 저장 디렉터리
+│   │   └── routepred.pt                # 저장된 모델 가중치 파일 (PyTorch)
+│   ├── config.py                       # 환경설정 및 설정값 정의
+│   ├── export_csv.py                   # 데이터 export 로직 구현
+│   ├── main.py                         # FastAPI 애플리케이션 진입점
+│   ├── model.py                        # 모델 정의 (PyTorch 모델 구조)
+│   ├── predictor.py                    # 예측 로직 구현 (모델 로딩 및 추론)
+│   ├── schemas.py                      # Pydantic 스키마 (입출력 데이터 검증)
+│   └── train.py                        # 모델 학습 로직 구현
+├── .env                                # 환경변수 파일 (비밀번호, 경로 등)
+├── .gitignore                          # Git에서 제외할 파일 목록
+├── README.md                           # 프로젝트 설명 문서
+└── requirements.txt                    # Python 의존성 목록 (pip install -r)
 ```
 
 ### 시스템 아키텍처
