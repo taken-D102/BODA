@@ -358,13 +358,33 @@ TAKEN_AI/
 
 ## 기능 시연
 
-### 기기 등록
-### 탐지
-### 실종 발생
-### 탐색 요청 전파
-### 경로 예측
-### 알림 수신
-### 리워드 획득
+### 기기 등록  
+<img src="./images/기기등록.gif" width="400"/>
+
+### 실종 발생  
+<img src="./images/아이와연결끊김.gif" width="400"/>
+
+### 실종 발생 후 탐색 요청  
+<img src="./images/도움요청.gif" width="400"/>
+
+### 탐색 요청 후 움직이는 아이의 위치 추적  
+<img src="./images/움직이는-아이.gif" width="400"/>
+
+### 경로 예측  
+<img src="./images/AI경로예측.gif" width="400"/>
+
+### 도움 요청 종료  
+<img src="./images/도움요청종료.gif" width="400"/>
+
+### 리워드 획득  
+<img src="./images/포인트획득.jpg" width="400"/>
+
+### 상점  
+<img src="./images/상점.gif" width="400"/>
+
+### 유저 프로필  
+<img src="./images/유저프로필.gif" width="400"/>
+
 
 ## 📌 기타 정보
 <a href="https://www.notion.so/D102-1d5174464c538001bfcaf9cc59bb7f40">
