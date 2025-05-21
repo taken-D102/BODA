@@ -156,6 +156,10 @@ TAKEN_AI/
 │   ├── predictor.py
 │   ├── schemas.py
 │   └── train.py
+├── .env
+├── .gitignore
+├── README.md
+└── requirements.txt
 ```
 
 ### 시스템 아키텍처
