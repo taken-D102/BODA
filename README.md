@@ -105,27 +105,36 @@ com/taken/boda/  (앱의 메인 패키지: /app/src/main/java/com/taken/boda/)
 ### 백엔드
 1. Spring Boot
 ```
-src
-└── main
-    └── java
-        └── com.ac102.taken
-            ├── domain
-            │   ├── auth
-            │   ├── campaign
-            │   ├── deviceUser
-            │   ├── member
-            │   ├── missingLocationLog
-            │   ├── report
-            │   ├── reward
-            │   └── shop
-            └── global
-                ├── config
-                ├── controller
-                ├── exception
-                ├── model
-                ├── repository
-                └── service
-            TakenApplication
+src/
+└── main/
+    ├── java/
+    │   └── com.ac102.taken/
+    │       ├── domain/                         # 도메인 계층 (업무별 핵심 로직)
+    │       │   ├── auth/                       # 인증/인가 도메인
+    │       │   ├── campaign/                   # 캠페인 관련 도메인
+    │       │   ├── deviceUser/                 # 기기 사용자 관련 도메인
+    │       │   ├── member/                     # 회원 관련 도메인
+    │       │   ├── missingLocationLog/         # 실종 위치 로그 도메인
+    │       │   ├── report/                     # 신고 관련 도메인
+    │       │   ├── reward/                     # 리워드 관련 도메인
+    │       │   └── shop/                       # 샵/상점 관련 도메인
+    │       │
+    │       ├── global/                         # 공통 모듈 (전역 설정, 예외 등)
+    │       │   ├── config/                     # 설정 클래스 (Security, WebConfig 등)
+    │       │   ├── controller/                 # 전역 컨트롤러 또는 공통 처리용
+    │       │   ├── exception/                  # 예외 처리 관련 클래스
+    │       │   ├── model/                      # 공통 DTO, VO 등
+    │       │   ├── repository/                 # 공통 Repository
+    │       │   └── service/                    # 공통 서비스
+    │       │
+    │       └── TakenApplication.java           # 메인 애플리케이션 진입점
+    │
+    └── resources/
+        ├── elasticsearch.mappings/             # 엘라스틱서치 매핑 JSON 등 설정
+        ├── fcm/                                # Firebase Cloud Messaging 설정 관련 파일
+        ├── application.yml                     # 기본 설정
+        ├── application-local.yml               # 로컬 환경 설정
+        └── application-prod.yml                # 운영 환경 설정
 ```
 2. FastAPI
 ```
